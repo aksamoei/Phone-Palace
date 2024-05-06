@@ -1,11 +1,28 @@
+import React, { useState, useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from "./pages/Home";
 
 function App() {
+
+  const [phones, setPhones] = useState([]);
+  
+
+  useEffect(function fetchData() {
+    fetch('http://localhost:3000/phones')
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        setPhones(data);
+      });
+  }, []);
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/*<header className="App-header">
+      <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,7 +34,9 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+       
+  </header>*/}
+       <Home phones={phones} setPhones={setPhones}/>
     </div>
   );
 }
