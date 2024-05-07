@@ -1,27 +1,44 @@
-import React, { useEffect, useState } from "react";
-import { useOutletContext } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import CartItem from '../components/CartItem'; // Import the CartItem component
+import './Home.css';
 
-function CartItems(){
-    const{itemCartId} = useOutletContext();
-    const [cartItemsArray, setCartItemsArray] = useState([])
+function CartItems() {
+  const [cartItems, setCartItems] = useState([]);
 
-    console.log(itemCartId)
-    
-    
-    // const phoneInCart = phones.find((phone)=>phone.id === itemCartId)
-    // console.log(phoneInCart)
-    
-    // setCartItemsArray((current)=>[...current, phoneInCart])
-    // console.log(cartItemsArray)
-    return(
-        <>
-            <h2>Cart</h2>
-            <div>
-                <img />
-                <h3></h3>
-            </div>
-        </>
-    );
+  useEffect(() => {
+    // Fetch cart items from the endpoint
+    fetch('http://localhost:3000/catitems')
+      .then(response => response.json())
+      .then(data => setCartItems(data))
+      .catch(error => console.error('Error fetching cart items:', error));
+  }, []);
+
+  // Function to remove an item from the cart
+const removeFromCart = (itemId) => {
+  fetch(`http://localhost:3000/catitems/${itemId}`, {
+    method: 'DELETE'
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to remove item from cart');
+    }
+    // Filter out the removed item from the cartItems state
+    setCartItems(prevCartItems => prevCartItems.filter(item => item.id !== itemId));
+  })
+  .catch(error => console.error('Error removing item from cart:', error));
+};
+
+
+  return (
+    <div className="cart-list-container">
+      <h2>Cart Items</h2>
+      <ul>
+        {cartItems.map(item => (
+          <CartItem key={item.id} item={item} removeFromCart={removeFromCart}/>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default CartItems;

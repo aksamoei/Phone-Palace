@@ -1,51 +1,54 @@
+
 import React, { useState, useEffect } from 'react';
-//import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import CartItems from './pages/CartItems';
+import PhoneDetails from './components/PhoneDetails';
 import './App.css';
-import Home from "./pages/Home";
-import { Outlet } from 'react-router-dom';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import Orders from './pages/Orders'
 
 function App() {
 
   const [phones, setPhones] = useState([]);
-  const [itemCartId, setItemCartId] = useState("")
-  
 
-  useEffect(()=>{
-    fetch("http://localhost:3001/phones")
-    .then((re)=>re.json())
-    .then((data)=>setPhones(data))
-  }, [])
-  
 
-  function handleCartId(cartId){
-    setItemCartId(cartId)
-  }
-  
+  useEffect(function fetchData() {
+    fetch('http://localhost:3000/phoneitems')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        setPhones(data);
+      });
+  }, []);
 
 
   return (
     <div className="App">
-      <header>
-        <NavBar />
-      </header>
-      {/*<header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-       
-  </header>*/}
-      <Outlet context={{phones: phones, setPhones: setPhones, setItemCartId: setItemCartId, itemCartId:itemCartId, onHomeCart: handleCartId}}/>
-       {/* <Home phones={phones} setPhones={setPhones}/> */}
+
+      <NavBar />
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home phones={phones} setPhones={setPhones} />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/cart" element={<CartItems />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/phones/:id" element={<PhoneDetails phones={phones} />} />
+        </Routes>
+      </Router>
+
+      <Footer />
+
+      {/*<Router>
+      <Routes>
+        <Route path="/" element={<Home phones={phones} setPhones={setPhones}/>} />
+        <Route path="/phones/:id" element={<PhoneDetails phones={phones} />} />
+      </Routes>
+    </Router>*/}
     </div>
   );
 }

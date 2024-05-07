@@ -39,7 +39,11 @@ function Home() {
   
   return (
     <div>
+<<<<<<< HEAD
         {/* <NavBar /> */}
+=======
+        
+>>>>>>> origin/main
       
       <p className="description">
         PhonePalace is your one-stop destination for buying the latest smartphones online. Whether you're an Android
