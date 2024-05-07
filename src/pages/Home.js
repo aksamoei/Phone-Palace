@@ -8,6 +8,7 @@ function Home({ phones}) {
     const [searchQuery, setSearchQuery] = useState('');
     
 
+    const albert;
     const filteredPhones = phones.filter(phone =>
       phone.phoneName.toLowerCase().includes(searchQuery.toLowerCase())
     );
