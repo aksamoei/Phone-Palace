@@ -1,9 +1,10 @@
 //entry point to DOM
 import App from  "./App.js"
 import Home from "./pages/Home.js";
-import Cart from "./pages/Cart.js";
+//import Cart from "./pages/Cart.js";
 import Item from "./pages/Item.js";
 import About from "./pages/About.js";
+import CartItems from "./pages/CartItems.js";
 
 
 const routes =  [
@@ -22,7 +23,7 @@ const routes =  [
             },
             {
                 path: "/cart",
-                element: <Cart />,
+                element: <CartItems />,
             },
             {
                 path: "/about",

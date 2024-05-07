@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa'; 
 import ItemCard from '../components/ItemCard';
 import './Home.css';
-import NavBar from '../components/NavBar';
+import { useOutletContext } from 'react-router-dom';
+//import NavBar from '../components/NavBar';
 
-function Home({ phones}) {
+function Home() {
     const [searchQuery, setSearchQuery] = useState('');
+    const {phones, setPhones} = useOutletContext();
     
 
     const filteredPhones = phones.filter(phone =>
@@ -33,7 +35,7 @@ function Home({ phones}) {
   
   return (
     <div>
-        <NavBar />
+        {/* <NavBar /> */}
       
       <p className="description">
         PhonePalace is your one-stop destination for buying the latest smartphones online. Whether you're an Android

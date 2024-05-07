@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Home from "./pages/Home";
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
 function App() {
 
   const [phones, setPhones] = useState([]);
   
 
-  useEffect(function fetchData() {
-    fetch('http://localhost:3000/phones')
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(data) {
-        setPhones(data);
-      });
-  }, []);
+  useEffect(()=>{
+    fetch("http://localhost:3001/phones")
+    .then((re)=>re.json())
+    .then((data)=>setPhones(data))
+  })
+  console.log(phones)
   
 
   return (
     <div className="App">
+      <header>
+        <NavBar />
+      </header>
       {/*<header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -36,7 +38,8 @@ function App() {
         </a>
        
   </header>*/}
-       <Home phones={phones} setPhones={setPhones}/>
+      <Outlet context={{phones: phones, setPhones: setPhones}}/>
+       {/* <Home phones={phones} setPhones={setPhones}/> */}
     </div>
   );
 }
