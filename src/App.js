@@ -16,7 +16,7 @@ function App() {
 
 
   useEffect(function fetchData() {
-    fetch('http://localhost:3000/phoneitems')
+    fetch('http://localhost:3001/phoneitems')
       .then(function (response) {
         return response.json();
       })

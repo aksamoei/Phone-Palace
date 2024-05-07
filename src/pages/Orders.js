@@ -6,7 +6,7 @@ function Orders() {
 
   useEffect(() => {
     // Fetch history items from the endpoint
-    fetch('http://localhost:3000/history')
+    fetch('http://localhost:3001/history')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch history items');

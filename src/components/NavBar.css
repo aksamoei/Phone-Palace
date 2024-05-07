@@ -1,47 +1,46 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.5rem;
-  }
-  
-  .brand {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
-  }
-  
-  .brand-name {
-    font-size: inherit;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 30px;
-    flex-grow: 1; /* Allow nav links to take remaining space */
-    justify-content: center; /* Align nav links to the center */
-  }
-  
-  .nav-link {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  
-  .nav-link.selected {
-    font-weight: bold; /* Apply bold font to indicate selection */
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: inherit;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  flex-grow: 1; /* Allow nav links to take remaining space */
+  justify-content: center; /* Align nav links to the center */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+.nav-link.selected {
+  font-weight: bold; /* Apply bold font to indicate selection */
+  text-decoration: underline;
+}

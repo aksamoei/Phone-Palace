@@ -7,7 +7,7 @@ function CartItems() {
 
   useEffect(() => {
     // Fetch cart items from the endpoint
-    fetch('http://localhost:3000/catitems')
+    fetch('http://localhost:3001/catitems')
       .then(response => response.json())
       .then(data => setCartItems(data))
       .catch(error => console.error('Error fetching cart items:', error));
@@ -15,7 +15,7 @@ function CartItems() {
 
   // Function to remove an item from the cart
 const removeFromCart = (itemId) => {
-  fetch(`http://localhost:3000/catitems/${itemId}`, {
+  fetch(`http://localhost:3001/catitems/${itemId}`, {
     method: 'DELETE'
   })
   .then(response => {

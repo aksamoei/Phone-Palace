@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ItemCard.css';
 import { Link, useNavigate } from 'react-router-dom';
 
-function ItemCard({ item, onCart}) {
+function ItemCard({ item}) {
   const [hovered, setHovered] = useState(false);
 
   const navigate = useNavigate();
@@ -25,12 +25,8 @@ function ItemCard({ item, onCart}) {
           Add to Cart
         </button>
       )*/}
-<<<<<<< HEAD
-      <button className="add-to-cart" onClick={()=>onCart(item.id)}>
-=======
       
       <button className="add-to-cart" onClick={handleClick} >
->>>>>>> origin/main
           View Phone Info
         </button>
     </div>

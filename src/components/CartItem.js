@@ -10,7 +10,7 @@ function CartItem({ item, removeFromCart}) {
 
   const handleBuy = () => {
     // Send a POST request to the history endpoint with the item data
-    fetch('http://localhost:3000/history', {
+    fetch("http://localhost:3001/history", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
