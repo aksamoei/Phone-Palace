@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ItemCard.css';
 
-function ItemCard({ item}) {
+function ItemCard({ item, onCart}) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ function ItemCard({ item}) {
           Add to Cart
         </button>
       )*/}
-      <button className="add-to-cart" >
+      <button className="add-to-cart" onClick={()=>onCart(item.id)}>
           View Phone Info
         </button>
     </div>

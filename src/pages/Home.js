@@ -7,7 +7,7 @@ import { useOutletContext } from 'react-router-dom';
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState('');
-    const {phones, setPhones} = useOutletContext();
+    const {phones, setPhones, setItemCartId, onHomeCart} = useOutletContext();
     
 
     const filteredPhones = phones.filter(phone =>
@@ -32,6 +32,10 @@ function Home() {
           description.appendChild(span);
         }
       }, []);
+
+    function handleCart(id){
+      onHomeCart(id)
+    }
   
   return (
     <div>
@@ -56,7 +60,7 @@ function Home() {
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {filteredPhones.map(phone => (
-          <ItemCard key={phone.id} item={phone}/>
+          <ItemCard key={phone.id} item={phone} onCart={handleCart}/>
         ))}
       </div>
     </div>

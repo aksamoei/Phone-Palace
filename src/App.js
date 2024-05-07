@@ -8,15 +8,21 @@ import NavBar from './components/NavBar';
 function App() {
 
   const [phones, setPhones] = useState([]);
+  const [itemCartId, setItemCartId] = useState("")
   
 
   useEffect(()=>{
     fetch("http://localhost:3001/phones")
     .then((re)=>re.json())
     .then((data)=>setPhones(data))
-  })
-  console.log(phones)
+  }, [])
   
+
+  function handleCartId(cartId){
+    setItemCartId(cartId)
+  }
+  
+
 
   return (
     <div className="App">
@@ -38,7 +44,7 @@ function App() {
         </a>
        
   </header>*/}
-      <Outlet context={{phones: phones, setPhones: setPhones}}/>
+      <Outlet context={{phones: phones, setPhones: setPhones, setItemCartId: setItemCartId, itemCartId:itemCartId, onHomeCart: handleCartId}}/>
        {/* <Home phones={phones} setPhones={setPhones}/> */}
     </div>
   );

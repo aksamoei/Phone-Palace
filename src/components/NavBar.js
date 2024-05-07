@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom';
 
 function NavBar() {
 
-    // const [selectedItem, setSelectedItem] = useState('Home');
+    const [selectedItem, setSelectedItem] = useState('Home');
 
-    // const handleItemClick = (itemName) => {
-    //     setSelectedItem(itemName);
-    // };
+    const handleItemClick = (itemName) => {
+        setSelectedItem(itemName);
+    };
 
     return (
         <nav className="navbar">
@@ -20,7 +20,7 @@ function NavBar() {
             <div className="nav-links">
                 <NavLink to="/" className="Home">Home</NavLink>
                 <NavLink to="/cart" className="Cart">Cart</NavLink>
-                <NavLink to="/about" className="About">About</NavLink>
+                <NavLink to="/about" className="About" onClick={() => handleItemClick('About')}>About</NavLink>
                  {/* <a href="/" className={`nav-link ${selectedItem === 'Home' ? 'selected' : ''}`} onClick={() => handleItemClick('Home')}>Home</a>
                 <a href="/cart" className={`nav-link ${selectedItem === 'Cart' ? 'selected' : ''}`} onClick={() => handleItemClick('Cart')}>Cart</a>
                 <a href="/about" className={`nav-link ${selectedItem === 'About' ? 'selected' : ''}`} onClick={() => handleItemClick('About')}>About</a>
