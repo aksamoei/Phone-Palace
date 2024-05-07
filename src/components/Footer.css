@@ -1,0 +1,41 @@
+/* Footer.css */
+
+.footer {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Add padding for spacing */
+    margin-top: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-details,
+  .other-details {
+    flex: 1;
+  }
+  
+  .contact-details h3,
+  .other-details h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-details p,
+  .other-details p {
+    margin: 5px 0;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .copyright p {
+    font-size: 14px;
+  }
+  
