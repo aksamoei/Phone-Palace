@@ -1,0 +1,113 @@
+.h1 {
+    color: red; /* Style h1 to have red color */
+  }
+
+.item-card {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px); /* 25% width with margin */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .item-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+  }
+  
+  .item-image {
+    width: 50%;
+    height: 200px; /* Adjust this value as needed */
+    /* Remove object-fit: cover; */
+    transition: transform 0.3s ease;
+  }
+  
+  .item-name {
+    margin: 10px 0;
+  }
+
+  .item-image:hover {
+    transform: scale(1.1); /* Increase image size on hover */
+  }
+  
+  
+  .item-price {
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-to-cart:hover {
+    background-color: red;
+  }
+
+  /*style p description*/ 
+  .color-0 {
+    color: red;
+  }
+  
+  .color-1 {
+    color: blue;
+  }
+  
+  .color-2 {
+    color: green;
+  }
+  
+  .color-3 {
+    color: orange;
+  }
+  
+  .color-4 {
+    color: purple;
+  }@keyframes colorChange {
+    0% {
+      color: red; /* Initial color */
+    }
+    100% {
+      color: blue; /* Final color */
+    }
+  }
+  .description{
+    font-size: 30px;
+  }
+  .description span {
+    animation: colorChange 5s linear infinite; /* Adjust duration and timing function as needed */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .search-input {
+    width: 80%; /* Adjust width to occupy most of the container */
+    max-width: 400px; /* Limit maximum width */
+    padding: 10px;
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .search-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  
+  
