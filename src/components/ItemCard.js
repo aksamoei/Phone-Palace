@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import './ItemCard.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 function ItemCard({ item}) {
   const [hovered, setHovered] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/phones/${item.id}`);
+  };
 
   return (
     <div
@@ -18,7 +25,8 @@ function ItemCard({ item}) {
           Add to Cart
         </button>
       )*/}
-      <button className="add-to-cart" >
+      
+      <button className="add-to-cart" onClick={handleClick} >
           View Phone Info
         </button>
     </div>

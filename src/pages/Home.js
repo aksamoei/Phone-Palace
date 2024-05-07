@@ -33,7 +33,7 @@ function Home({ phones}) {
   
   return (
     <div>
-        <NavBar />
+        
       
       <p className="description">
         PhonePalace is your one-stop destination for buying the latest smartphones online. Whether you're an Android

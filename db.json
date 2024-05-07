@@ -1,165 +1,356 @@
 {
-    "phones": [
-      {
-        "id": 1,
-        "phoneName": "iPhone 13 Pro",
-        "brand": "Apple",
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/07/Apple-iPhone-13-Pro.jpg",
-        "price": 999,
-        "description_short": "The iPhone 13 Pro is Apple's latest flagship offering, boasting an advanced camera system and powerful performance.",
-        "description_long": "The iPhone 13 Pro is the pinnacle of Apple's smartphone lineup, featuring a stunning Super Retina XDR display, Pro camera system with advanced computational photography, and the lightning-fast A15 Bionic chip. Its premium design, combined with the latest iOS features, ensures an unparalleled user experience.",
-        "features": ["Super Retina XDR display", "Pro camera system", "A15 Bionic chip", "iOS 15", "5G capable"]
-      },
-      {
-        "id": 2,
-        "phoneName": "Galaxy S21 Ultra",
-        "brand": "Samsung",
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
-        "price": 1199,
-        "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
-        "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
-        "features": ["108MP camera", "100x Space Zoom", "120Hz Dynamic AMOLED 2X display", "Exynos 2100/Snapdragon 888 processor", "S Pen compatibility"]
-      },
-      {
-        "id": 3,
-        "phoneName": "OnePlus 9 Pro",
-        "brand": "OnePlus",
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
-        "price": 969,
-        "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
-        "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
-        "features": ["Hasselblad camera system", "Snapdragon 888 processor", "Warp Charge 65T", "OxygenOS", "5G capable"]
-      },
-      {
-        "id": 4,
-        "phoneName": "Google Pixel 6 Pro",
-        "brand": "Google",
-        "image": "https://dealfit.tech/wp-content/uploads/2024/02/Google-Pixel-8-Pro-b-700x700.jpg",
-        "price": 899,
-        "description_short": "The Google Pixel 6 Pro offers a superior camera experience and seamless Android integration.",
-        "description_long": "The Google Pixel 6 Pro boasts a cutting-edge camera system with advanced computational photography features. Its smooth performance, thanks to the Tensor chip, and Google's commitment to timely updates make it a top choice for Android enthusiasts.",
-        "features": ["Tensor chip", "Advanced camera system", "Android 12", "5G capable"]
-      },
-      {
-        "id": 5,
-        "phoneName": "Xiaomi Mi 12",
-        "brand": "Xiaomi",
-        "image": "https://xiaomistores.co.ke/wp-content/uploads/2023/08/111603.jpg",
-        "price": 799,
-        "description_short": "The Xiaomi Mi 12 combines powerful performance with innovative features at an affordable price.",
-        "description_long": "The Xiaomi Mi 12 features a Snapdragon 8 Gen 1 processor and a high-refresh-rate display, offering a smooth user experience. With its versatile camera setup and MIUI 13, it delivers exceptional value for money.",
-        "features": ["Snapdragon 8 Gen 1 processor", "High-refresh-rate display", "Versatile camera setup", "MIUI 13", "5G capable"]
-      },
-      {
-        "id": 6,
-        "phoneName": "Sony Xperia 1 III",
-        "brand": "Sony",
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/11/Sony-Xperia-10-V-Blue.jpg",
-        "price": 1099,
-        "description_short": "The Sony Xperia 1 III offers professional-grade photography and cinematic display quality.",
-        "description_long": "The Sony Xperia 1 III features a 4K OLED display with HDR support, perfect for cinematic viewing experiences. Its triple camera system with ZEISS optics delivers exceptional image quality, making it a favorite among photography enthusiasts.",
-        "features": ["4K OLED display with HDR", "Triple camera system with ZEISS optics", "Snapdragon 888 processor", "Professional photography features"]
-      },
-      {
-        "id": 7,
-        "phoneName": "Huawei P50 Pro",
-        "brand": "Huawei",
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/07/Huawei-Mate-50-Pro.jpg",
-        "price": 899,
-        "description_short": "The Huawei P50 Pro excels in photography and offers a premium design with innovative features.",
-        "description_long": "The Huawei P50 Pro features an impressive quad-camera setup developed in collaboration with Leica, delivering stunning photography results. Its elegant design, powered by HarmonyOS, offers a unique user experience.",
-        "features": ["Quad-camera setup with Leica optics", "HarmonyOS", "Premium design", "5G capable"]
-      },
-      {
-        "id": 8,
-        "phoneName": "Motorola Edge X30",
-        "brand": "Motorola",
-        "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-edge-x30.jpg",
-        "price": 699,
-        "description_short": "The Motorola Edge X30 combines flagship performance with a sleek design at an affordable price point.",
-        "description_long": "The Motorola Edge X30 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, offering smooth performance and vibrant visuals. Its versatile camera system and long-lasting battery make it ideal for everyday use.",
-        "features": ["Snapdragon 8 Gen 1 processor", "144Hz AMOLED display", "Versatile camera system", "Long-lasting battery", "5G capable"]
-      },
-      {
-        "id": 9,
-        "phoneName": "Realme GT 2 Pro",
-        "brand": "Realme",
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Realme-GT-2-Pro-A.jpg",
-        "price": 699,
-        "description_short": "The Realme GT 2 Pro offers flagship-level performance and features at an affordable price.",
-        "description_long": "The Realme GT 2 Pro features a Snapdragon 8 Gen 1 processor and a high-refresh-rate Super AMOLED display, delivering smooth performance and vibrant visuals. Its versatile camera system and fast charging capabilities make it a compelling choice.",
-        "features": ["Snapdragon 8 Gen 1 processor", "Super AMOLED display with high refresh rate", "Versatile camera system", "65W fast charging", "5G capable"]
-      },
-      {
-        "id": 10,
-        "phoneName": "Oppo Find X5 Pro",
-        "brand": "Oppo",
-        "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
-        "price": 1099,
-        "description_short": "The Oppo Find X5 Pro offers cutting-edge technology and elegant design, perfect for discerning users.",
-        "description_long": "The Oppo Find X5 Pro features a Hasselblad-developed camera system and a QHD+ AMOLED display, delivering exceptional photography and viewing experiences. Its sleek design and ColorOS 12 provide a premium user experience.",
-        "features": ["Hasselblad-developed camera system", "QHD+ AMOLED display", "ColorOS 12", "Fast charging", "5G capable"]
-      },
-      {
-        "id": 11,
-        "phoneName": "Asus ROG Phone 6",
-        "brand": "Asus",
-        "image": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone6.jpg",
-        "price": 999,
-        "description_short": "The Asus ROG Phone 6 is a gaming powerhouse with advanced features tailored for gaming enthusiasts.",
-        "description_long": "The Asus ROG Phone 6 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, offering smooth gaming performance and immersive visuals. Its innovative gaming-centric features make it the ultimate choice for mobile gamers.",
-        "features": ["Snapdragon 8 Gen 1 processor", "144Hz AMOLED display", "Gaming-centric features", "AirTrigger 5", "6000mAh battery"]
-      },
-      {
-        "id": 12,
-        "phoneName": "Nokia X100",
-        "brand": "Nokia",
-        "image": "https://fdn2.gsmarena.com/vv/bigpic/nokia-x100.jpg",
-        "price": 299,
-        "description_short": "The Nokia X100 offers a pure Android experience and reliable performance at an affordable price.",
-        "description_long": "The Nokia X100 features a Snapdragon 480 processor and a large display, providing a smooth and immersive user experience. Its clean Android interface and robust build quality make it a dependable choice for everyday use.",
-        "features": ["Snapdragon 480 processor", "Large display", "Pure Android experience", "Robust build quality", "5G capable"]
-      },
-      {
-        "id": 13,
-        "phoneName": "Lenovo Legion Phone Duel 3",
-        "brand": "Lenovo",
-        "image": "https://s3bo.cashify.in/gpro/uploads/2022/01/31134006/lenovo-legion-duel-3-5g-front.jpg?p=gp4sq&s=gp",
-        "price": 899,
-        "description_short": "The Lenovo Legion Phone Duel 3 offers unrivaled gaming performance and innovative design for gaming enthusiasts.",
-        "description_long": "The Lenovo Legion Phone Duel 3 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, delivering smooth gaming performance and immersive visuals. Its unique landscape design and gaming-centric features make it a standout choice for mobile gamers.",
-        "features": ["Snapdragon 8 Gen 1 processor", "144Hz AMOLED display", "Gaming-centric features", "Pop-up camera", "Dual batteries"]
-      },
-      {
-        "id": 14,
-        "phoneName": "BlackBerry Key3",
-        "brand": "BlackBerry",
-        "image": "https://www.humtechke.com/wp-content/uploads/2022/07/Blackberry-Key3.jpg",
-        "price": 599,
-        "description_short": "The BlackBerry Key3 combines productivity features with a physical keyboard for users who prioritize efficiency.",
-        "description_long": "The BlackBerry Key3 features a modern design with a full physical keyboard, ideal for users who prefer tactile typing. Its suite of productivity-focused software and robust security features ensure a secure and efficient user experience.",
-        "features": ["Physical keyboard", "Productivity-focused software", "Security features", "Large battery", "5G capable"]
-      }
-    ],
-    "catitems": [
-      {
-        "id": 1,
-        "itemName": "Cat Food",
-        "category": "Pet Supplies",
-        "image": "https://example.com/catfood.jpg",
-        "price": 19.99,
-        "description_short": "Premium cat food for your feline friend.",
-        "description_long": "Our premium cat food is specially formulated to provide complete and balanced nutrition for your furry companion. Made with high-quality ingredients and no artificial additives, it's the perfect choice for cats of all ages and breeds."
-      },
-      {
-        "id": 2,
-        "itemName": "Cat Toy Set",
-        "category": "Pet Supplies",
-        "image": "https://example.com/cattoyset.jpg",
-        "price": 29.99,
-        "description_short": "A set of interactive toys to keep your cat entertained.",
-        "description_long": "Our cat toy set includes a variety of interactive toys designed to stimulate your cat's natural instincts and provide hours of entertainment. From feather wands to crinkle balls, this set has everything your cat needs for playtime fun."
-      }
-    ]
-  }
-  
+  "phoneitems": [
+    {
+      "id": "1",
+      "phoneName": "iPhone 13 Pro",
+      "brand": "Apple",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/07/Apple-iPhone-13-Pro.jpg",
+      "price": 999,
+      "description_short": "The iPhone 13 Pro is Apple's latest flagship offering, boasting an advanced camera system and powerful performance.",
+      "description_long": "The iPhone 13 Pro is the pinnacle of Apple's smartphone lineup, featuring a stunning Super Retina XDR display, Pro camera system with advanced computational photography, and the lightning-fast A15 Bionic chip. Its premium design, combined with the latest iOS features, ensures an unparalleled user experience.",
+      "features": [
+        "Super Retina XDR display",
+        "Pro camera system",
+        "A15 Bionic chip",
+        "iOS 15",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "2",
+      "phoneName": "Galaxy S21 Ultra",
+      "brand": "Samsung",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
+      "price": 1199,
+      "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
+      "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
+      "features": [
+        "108MP camera",
+        "100x Space Zoom",
+        "120Hz Dynamic AMOLED 2X display",
+        "Exynos 2100/Snapdragon 888 processor",
+        "S Pen compatibility"
+      ]
+    },
+    {
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
+      "features": [
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "4",
+      "phoneName": "Google Pixel 6 Pro",
+      "brand": "Google",
+      "image": "https://dealfit.tech/wp-content/uploads/2024/02/Google-Pixel-8-Pro-b-700x700.jpg",
+      "price": 899,
+      "description_short": "The Google Pixel 6 Pro offers a superior camera experience and seamless Android integration.",
+      "description_long": "The Google Pixel 6 Pro boasts a cutting-edge camera system with advanced computational photography features. Its smooth performance, thanks to the Tensor chip, and Google's commitment to timely updates make it a top choice for Android enthusiasts.",
+      "features": [
+        "Tensor chip",
+        "Advanced camera system",
+        "Android 12",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "5",
+      "phoneName": "Xiaomi Mi 12",
+      "brand": "Xiaomi",
+      "image": "https://xiaomistores.co.ke/wp-content/uploads/2023/08/111603.jpg",
+      "price": 799,
+      "description_short": "The Xiaomi Mi 12 combines powerful performance with innovative features at an affordable price.",
+      "description_long": "The Xiaomi Mi 12 features a Snapdragon 8 Gen 1 processor and a high-refresh-rate display, offering a smooth user experience. With its versatile camera setup and MIUI 13, it delivers exceptional value for money.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "High-refresh-rate display",
+        "Versatile camera setup",
+        "MIUI 13",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "6",
+      "phoneName": "Sony Xperia 1 III",
+      "brand": "Sony",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/11/Sony-Xperia-10-V-Blue.jpg",
+      "price": 1099,
+      "description_short": "The Sony Xperia 1 III offers professional-grade photography and cinematic display quality.",
+      "description_long": "The Sony Xperia 1 III features a 4K OLED display with HDR support, perfect for cinematic viewing experiences. Its triple camera system with ZEISS optics delivers exceptional image quality, making it a favorite among photography enthusiasts.",
+      "features": [
+        "4K OLED display with HDR",
+        "Triple camera system with ZEISS optics",
+        "Snapdragon 888 processor",
+        "Professional photography features"
+      ]
+    },
+    {
+      "id": "7",
+      "phoneName": "Huawei P50 Pro",
+      "brand": "Huawei",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/07/Huawei-Mate-50-Pro.jpg",
+      "price": 899,
+      "description_short": "The Huawei P50 Pro excels in photography and offers a premium design with innovative features.",
+      "description_long": "The Huawei P50 Pro features an impressive quad-camera setup developed in collaboration with Leica, delivering stunning photography results. Its elegant design, powered by HarmonyOS, offers a unique user experience.",
+      "features": [
+        "Quad-camera setup with Leica optics",
+        "HarmonyOS",
+        "Premium design",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "8",
+      "phoneName": "Motorola Edge X30",
+      "brand": "Motorola",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-edge-x30.jpg",
+      "price": 699,
+      "description_short": "The Motorola Edge X30 combines flagship performance with a sleek design at an affordable price point.",
+      "description_long": "The Motorola Edge X30 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, offering smooth performance and vibrant visuals. Its versatile camera system and long-lasting battery make it ideal for everyday use.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "144Hz AMOLED display",
+        "Versatile camera system",
+        "Long-lasting battery",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "9",
+      "phoneName": "Realme GT 2 Pro",
+      "brand": "Realme",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Realme-GT-2-Pro-A.jpg",
+      "price": 699,
+      "description_short": "The Realme GT 2 Pro offers flagship-level performance and features at an affordable price.",
+      "description_long": "The Realme GT 2 Pro features a Snapdragon 8 Gen 1 processor and a high-refresh-rate Super AMOLED display, delivering smooth performance and vibrant visuals. Its versatile camera system and fast charging capabilities make it a compelling choice.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "Super AMOLED display with high refresh rate",
+        "Versatile camera system",
+        "65W fast charging",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "10",
+      "phoneName": "Oppo Find X5 Pro",
+      "brand": "Oppo",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
+      "price": 1099,
+      "description_short": "The Oppo Find X5 Pro offers cutting-edge technology and elegant design, perfect for discerning users.",
+      "description_long": "The Oppo Find X5 Pro features a Hasselblad-developed camera system and a QHD+ AMOLED display, delivering exceptional photography and viewing experiences. Its sleek design and ColorOS 12 provide a premium user experience.",
+      "features": [
+        "Hasselblad-developed camera system",
+        "QHD+ AMOLED display",
+        "ColorOS 12",
+        "Fast charging",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "11",
+      "phoneName": "Asus ROG Phone 6",
+      "brand": "Asus",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/asus-rog-phone6.jpg",
+      "price": 999,
+      "description_short": "The Asus ROG Phone 6 is a gaming powerhouse with advanced features tailored for gaming enthusiasts.",
+      "description_long": "The Asus ROG Phone 6 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, offering smooth gaming performance and immersive visuals. Its innovative gaming-centric features make it the ultimate choice for mobile gamers.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "144Hz AMOLED display",
+        "Gaming-centric features",
+        "AirTrigger 5",
+        "6000mAh battery"
+      ]
+    },
+    {
+      "id": "12",
+      "phoneName": "Nokia X100",
+      "brand": "Nokia",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/nokia-x100.jpg",
+      "price": 299,
+      "description_short": "The Nokia X100 offers a pure Android experience and reliable performance at an affordable price.",
+      "description_long": "The Nokia X100 features a Snapdragon 480 processor and a large display, providing a smooth and immersive user experience. Its clean Android interface and robust build quality make it a dependable choice for everyday use.",
+      "features": [
+        "Snapdragon 480 processor",
+        "Large display",
+        "Pure Android experience",
+        "Robust build quality",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "13",
+      "phoneName": "Lenovo Legion Phone Duel 3",
+      "brand": "Lenovo",
+      "image": "https://s3bo.cashify.in/gpro/uploads/2022/01/31134006/lenovo-legion-duel-3-5g-front.jpg?p=gp4sq&s=gp",
+      "price": 899,
+      "description_short": "The Lenovo Legion Phone Duel 3 offers unrivaled gaming performance and innovative design for gaming enthusiasts.",
+      "description_long": "The Lenovo Legion Phone Duel 3 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, delivering smooth gaming performance and immersive visuals. Its unique landscape design and gaming-centric features make it a standout choice for mobile gamers.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "144Hz AMOLED display",
+        "Gaming-centric features",
+        "Pop-up camera",
+        "Dual batteries"
+      ]
+    },
+    {
+      "id": "14",
+      "phoneName": "BlackBerry Key3",
+      "brand": "BlackBerry",
+      "image": "https://www.humtechke.com/wp-content/uploads/2022/07/Blackberry-Key3.jpg",
+      "price": 599,
+      "description_short": "The BlackBerry Key3 combines productivity features with a physical keyboard for users who prioritize efficiency.",
+      "description_long": "The BlackBerry Key3 features a modern design with a full physical keyboard, ideal for users who prefer tactile typing. Its suite of productivity-focused software and robust security features ensure a secure and efficient user experience.",
+      "features": [
+        "Physical keyboard",
+        "Productivity-focused software",
+        "Security features",
+        "Large battery",
+        "5G capable"
+      ]
+    }
+  ],
+  "catitems": [
+    {
+      "id": "7",
+      "phoneName": "Huawei P50 Pro",
+      "brand": "Huawei",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/07/Huawei-Mate-50-Pro.jpg",
+      "price": 899,
+      "description_short": "The Huawei P50 Pro excels in photography and offers a premium design with innovative features.",
+      "description_long": "The Huawei P50 Pro features an impressive quad-camera setup developed in collaboration with Leica, delivering stunning photography results. Its elegant design, powered by HarmonyOS, offers a unique user experience.",
+      "features": [
+        "Quad-camera setup with Leica optics",
+        "HarmonyOS",
+        "Premium design",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "10",
+      "phoneName": "Oppo Find X5 Pro",
+      "brand": "Oppo",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
+      "price": 1099,
+      "description_short": "The Oppo Find X5 Pro offers cutting-edge technology and elegant design, perfect for discerning users.",
+      "description_long": "The Oppo Find X5 Pro features a Hasselblad-developed camera system and a QHD+ AMOLED display, delivering exceptional photography and viewing experiences. Its sleek design and ColorOS 12 provide a premium user experience.",
+      "features": [
+        "Hasselblad-developed camera system",
+        "QHD+ AMOLED display",
+        "ColorOS 12",
+        "Fast charging",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "2",
+      "phoneName": "Galaxy S21 Ultra",
+      "brand": "Samsung",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
+      "price": 1199,
+      "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
+      "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
+      "features": [
+        "108MP camera",
+        "100x Space Zoom",
+        "120Hz Dynamic AMOLED 2X display",
+        "Exynos 2100/Snapdragon 888 processor",
+        "S Pen compatibility"
+      ]
+    }
+  ],
+  "history": [
+    {
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
+      "features": [
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "9",
+      "phoneName": "Realme GT 2 Pro",
+      "brand": "Realme",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Realme-GT-2-Pro-A.jpg",
+      "price": 699,
+      "description_short": "The Realme GT 2 Pro offers flagship-level performance and features at an affordable price.",
+      "description_long": "The Realme GT 2 Pro features a Snapdragon 8 Gen 1 processor and a high-refresh-rate Super AMOLED display, delivering smooth performance and vibrant visuals. Its versatile camera system and fast charging capabilities make it a compelling choice.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "Super AMOLED display with high refresh rate",
+        "Versatile camera system",
+        "65W fast charging",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
+      "features": [
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "9",
+      "phoneName": "Realme GT 2 Pro",
+      "brand": "Realme",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Realme-GT-2-Pro-A.jpg",
+      "price": 699,
+      "description_short": "The Realme GT 2 Pro offers flagship-level performance and features at an affordable price.",
+      "description_long": "The Realme GT 2 Pro features a Snapdragon 8 Gen 1 processor and a high-refresh-rate Super AMOLED display, delivering smooth performance and vibrant visuals. Its versatile camera system and fast charging capabilities make it a compelling choice.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "Super AMOLED display with high refresh rate",
+        "Versatile camera system",
+        "65W fast charging",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "12",
+      "phoneName": "Nokia X100",
+      "brand": "Nokia",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/nokia-x100.jpg",
+      "price": 299,
+      "description_short": "The Nokia X100 offers a pure Android experience and reliable performance at an affordable price.",
+      "description_long": "The Nokia X100 features a Snapdragon 480 processor and a large display, providing a smooth and immersive user experience. Its clean Android interface and robust build quality make it a dependable choice for everyday use.",
+      "features": [
+        "Snapdragon 480 processor",
+        "Large display",
+        "Pure Android experience",
+        "Robust build quality",
+        "5G capable"
+      ]
+    }
+  ]
+}
