@@ -40,7 +40,7 @@ function CartItem({ item, removeFromCart}) {
         <p className="cart-item-price">Price: ${item.price}</p>
       </div>
       <div className="cart-item-buttons">
-        <button className="buy-button" onClick={handleBuy}>Buy</button>
+        <button className="buy-button" onClick={handleBuy}>Buy Phone</button>
         <button className="remove-from-cart-button" onClick={handleRemoveFromCart}>Remove from Cart</button>
 
       </div>
