@@ -1,7 +1,7 @@
 import React from 'react';
-import './AboutPage.css'; 
+import './About.css'; 
 
-function AboutPage() {
+function About() {
   return (
     <div className="container">
       <h1>Phone Palace</h1>
@@ -12,6 +12,7 @@ function AboutPage() {
       
       <h2>What We Offer</h2>
       <ul>
+        <li><strong>Buying options:</strong>We have a massive collection of phone brands that we feel you might be interested in, so make sure to check our Phone Palace for your favourite pick. </li>
         <li><strong>Phone Reviews:</strong> Stay updated with our in-depth reviews of the latest smartphones from various manufacturers. We provide unbiased assessments of features, performance, and value to help you find the perfect device for your needs.</li>
         <li><strong>Buying Guides:</strong> Not sure which phone is right for you? Our buying guides offer tailored recommendations based on your budget, preferences, and usage requirements.</li>
         <li><strong>Tech News:</strong> Keep up with the latest developments in the world of mobile technology with our curated selection of news articles and insights.</li>
@@ -24,9 +25,9 @@ function AboutPage() {
       <h2>Get in Touch</h2>
       <p>We value your feedback and suggestions. If you have any questions, comments, or ideas for future content, please don't hesitate to <a href="mailto:info@phoneshub.com">contact us</a>.</p>
       <ul>
-        <li>Email: <a href="mailto:info@phoneshub.com">info@phoneshub.com</a></li>
-        <li>Follow us on Twitter: <a href="https://twitter.com/phoneshub">@phoneshub</a></li>
-        <li>Like us on Facebook: <a href="https://facebook.com/phoneshub">/phoneshub</a></li>
+        <li>Email: <a href="mailto:info@phonespalace.com">info@phonespalace.com</a></li>
+        <li>Follow us on Twitter: <a href="https://twitter.com/phonespalace">@phonespalace</a></li>
+        <li>Like us on Facebook: <a href="https://facebook.com/phonespalace">/phonespalace</a></li>
       </ul>
       
       <p>Thank you for visiting Phones Palace! We hope you find our website helpful and informative.</p>
@@ -34,4 +35,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default About;
