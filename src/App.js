@@ -13,7 +13,7 @@ import Orders from './pages/Orders'
 function App() {
 
   const [phones, setPhones] = useState([]);
-
+ 
 
   useEffect(function fetchData() {
     fetch('http://localhost:3001/phoneitems')
@@ -36,9 +36,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home phones={phones} setPhones={setPhones} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<CartItems />} />
+          <Route path="/cart" element={<CartItems /> } />
           <Route path="/orders" element={<Orders />} />
-          <Route path="/phones/:id" element={<PhoneDetails phones={phones} />} />
+          <Route path="/phones/:id" element={<PhoneDetails phones={phones}/>} />
         </Routes>
       
 

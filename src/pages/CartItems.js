@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CartItem from '../components/CartItem'; // Import the CartItem component
 import './Home.css';
 
+
 function CartItems() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -27,6 +28,7 @@ const removeFromCart = (itemId) => {
   })
   .catch(error => console.error('Error removing item from cart:', error));
 };
+
 
 
   return (

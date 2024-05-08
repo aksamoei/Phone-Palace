@@ -11,6 +11,8 @@
 
 .phone-details {
   display: flex;
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
 }
 .phone-name{
   font-size: 40px;

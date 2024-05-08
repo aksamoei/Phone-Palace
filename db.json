@@ -224,17 +224,66 @@
   ],
   "catitems": [
     {
-      "id": "4",
-      "phoneName": "Google Pixel 6 Pro",
-      "brand": "Google",
-      "image": "https://dealfit.tech/wp-content/uploads/2024/02/Google-Pixel-8-Pro-b-700x700.jpg",
-      "price": 899,
-      "description_short": "The Google Pixel 6 Pro offers a superior camera experience and seamless Android integration.",
-      "description_long": "The Google Pixel 6 Pro boasts a cutting-edge camera system with advanced computational photography features. Its smooth performance, thanks to the Tensor chip, and Google's commitment to timely updates make it a top choice for Android enthusiasts.",
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
       "features": [
-        "Tensor chip",
-        "Advanced camera system",
-        "Android 12",
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "2",
+      "phoneName": "Galaxy S21 Ultra",
+      "brand": "Samsung",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
+      "price": 1199,
+      "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
+      "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
+      "features": [
+        "108MP camera",
+        "100x Space Zoom",
+        "120Hz Dynamic AMOLED 2X display",
+        "Exynos 2100/Snapdragon 888 processor",
+        "S Pen compatibility"
+      ]
+    },
+    {
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
+      "features": [
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
+        "5G capable"
+      ]
+    },
+    {
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
+      "features": [
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
         "5G capable"
       ]
     }
@@ -350,6 +399,22 @@
         "120Hz Dynamic AMOLED 2X display",
         "Exynos 2100/Snapdragon 888 processor",
         "S Pen compatibility"
+      ]
+    },
+    {
+      "id": "8",
+      "phoneName": "Motorola Edge X30",
+      "brand": "Motorola",
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-edge-x30.jpg",
+      "price": 699,
+      "description_short": "The Motorola Edge X30 combines flagship performance with a sleek design at an affordable price point.",
+      "description_long": "The Motorola Edge X30 features a Snapdragon 8 Gen 1 processor and a 144Hz AMOLED display, offering smooth performance and vibrant visuals. Its versatile camera system and long-lasting battery make it ideal for everyday use.",
+      "features": [
+        "Snapdragon 8 Gen 1 processor",
+        "144Hz AMOLED display",
+        "Versatile camera system",
+        "Long-lasting battery",
+        "5G capable"
       ]
     }
   ]

@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import './NavBar.css'; // Import CSS file for additional styles
 import { NavLink } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 
 function NavBar() {
 
     const [selectedItem, setSelectedItem] = useState('');
+
 
     const handleItemClick = (itemName) => {
         setSelectedItem(itemName);
@@ -23,7 +25,9 @@ function NavBar() {
                 <a href="/about" className={`nav-link ${selectedItem === 'About' ? 'selected' : ''}`} onClick={() => handleItemClick('About')}>About</a>
                  */}
                  <NavLink to="/" className={`nav-link ${selectedItem === 'Home' ? 'selected' : ''}`} onClick={() => handleItemClick('Home')}>Home</NavLink>
-                <NavLink to="/cart" className={`nav-link ${selectedItem === 'Cart' ? 'selected' : ''}`} onClick={() => handleItemClick('Cart')}>Cart</NavLink>
+                <NavLink to="/cart" className={`nav-link ${selectedItem === 'Cart' ? 'selected' : ''}`} onClick={() => handleItemClick('Cart')}>
+                <FaShoppingCart />
+                </NavLink>
                 <NavLink to="/orders" className={`nav-link ${selectedItem === 'Orders' ? 'selected' : ''}`} onClick={() => handleItemClick('Orders')}>Orders</NavLink>
                 <NavLink to="/about" className={`nav-link ${selectedItem === 'About' ? 'selected' : ''}`} onClick={() => handleItemClick('About')}>About</NavLink>
                  

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa'; 
 import ItemCard from '../components/ItemCard';
 import './Home.css';
-import NavBar from '../components/NavBar';
+import FilterBrand from '../components/FilterBrand';
 
 function Home({ phones }) {
     const [searchQuery, setSearchQuery] = useState('');
@@ -56,23 +56,7 @@ function Home({ phones }) {
                 <FaSearch className="search-icon" /> {/* Search icon */}
             </div>
             <div className='filter-container'>
-                <select id="brandSelect" value={filterBrand} onChange={handleBrandFilter}>
-                    <option value="Select Brand">Select Brand</option>
-                    <option value="Apple">Apple</option>
-                    <option value="Samsung">Samsung</option>
-                    <option value="OnePlus">OnePlus</option>
-                    <option value="Google">Google</option>
-                    <option value="Xiaomi">Xiaomi</option>
-                    <option value="Sony">Sony</option>
-                    <option value="Huawei">Huawei</option>
-                    <option value="Motorola">Motorola</option>
-                    <option value="Realme">Realme</option>
-                    <option value="Oppo">Oppo</option>
-                    <option value="Asus">Asus</option>
-                    <option value="Nokia">Nokia</option>
-                    <option value="Lenovo">Lenovo</option>
-                    <option value="BlackBerry">BlackBerry</option>
-                </select>
+                <FilterBrand handleBrandFilter={handleBrandFilter} filterBrand={filterBrand}/>
             </div>
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {filteredPhones.length > 0 ? (
