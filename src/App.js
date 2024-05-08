@@ -27,11 +27,12 @@ function App() {
 
 
   return (
+    <Router>
     <div className="App">
 
       <NavBar />
 
-      <Router>
+      
         <Routes>
           <Route path="/" element={<Home phones={phones} setPhones={setPhones} />} />
           <Route path="/about" element={<About />} />
@@ -39,9 +40,10 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/phones/:id" element={<PhoneDetails phones={phones} />} />
         </Routes>
-      </Router>
+      
 
       <Footer />
+      
 
       {/*<Router>
       <Routes>
@@ -50,6 +52,7 @@ function App() {
       </Routes>
     </Router>*/}
     </div>
+    </Router>
   );
 }
 

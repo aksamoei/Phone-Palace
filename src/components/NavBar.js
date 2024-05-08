@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './NavBar.css'; // Import CSS file for additional styles
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
 
@@ -16,10 +17,16 @@ function NavBar() {
                 <span className="brand-name">PhonePalace</span>
             </div>
             <div className="nav-links">
-                <a href="/" className={`nav-link ${selectedItem === 'Home' ? 'selected' : ''}`} onClick={() => handleItemClick('Home')}>Home</a>
+                {/* <a href="/" className={`nav-link ${selectedItem === 'Home' ? 'selected' : ''}`} onClick={() => handleItemClick('Home')}>Home</a>
                 <a href="/cart" className={`nav-link ${selectedItem === 'Cart' ? 'selected' : ''}`} onClick={() => handleItemClick('Cart')}>Cart</a>
                 <a href="/orders" className={`nav-link ${selectedItem === 'Orders' ? 'selected' : ''}`} onClick={() => handleItemClick('Orders')}>Orders</a>
                 <a href="/about" className={`nav-link ${selectedItem === 'About' ? 'selected' : ''}`} onClick={() => handleItemClick('About')}>About</a>
+                 */}
+                 <NavLink to="/" className={`nav-link ${selectedItem === 'Home' ? 'selected' : ''}`} onClick={() => handleItemClick('Home')}>Home</NavLink>
+                <NavLink to="/cart" className={`nav-link ${selectedItem === 'Cart' ? 'selected' : ''}`} onClick={() => handleItemClick('Cart')}>Cart</NavLink>
+                <NavLink to="/orders" className={`nav-link ${selectedItem === 'Orders' ? 'selected' : ''}`} onClick={() => handleItemClick('Orders')}>Orders</NavLink>
+                <NavLink to="/about" className={`nav-link ${selectedItem === 'About' ? 'selected' : ''}`} onClick={() => handleItemClick('About')}>About</NavLink>
+                 
                 
             </div>
         </nav>

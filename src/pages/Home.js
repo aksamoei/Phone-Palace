@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa'; 
 import ItemCard from '../components/ItemCard';
 import './Home.css';
@@ -21,6 +21,20 @@ function Home({ phones }) {
         (searchQuery === '' || phone.phoneName.toLowerCase().includes(searchQuery)) &&
         (filterBrand === "Select Brand" || phone.brand === filterBrand)
     );
+
+    useEffect(() => {
+        const description = document.querySelector('.description');
+        const text = description.textContent;
+        description.textContent = '';
+    
+        // Create a span for each letter and apply animation delay
+        for (let i = 0; i < text.length; i++) {
+          const span = document.createElement('span');
+          span.textContent = text[i];
+          span.style.animationDelay = `${i * 0.1}s`; // Adjust delay for desired speed
+          description.appendChild(span);
+        }
+      }, []);
 
     return (
         <div>
