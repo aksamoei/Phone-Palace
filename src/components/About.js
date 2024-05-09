@@ -8,7 +8,7 @@ function About() {
       <p>Welcome to Phones Palace, your go-to destination for all things related to smartphones and mobile technology!</p>
       
       <h2>Our Mission</h2>
-      <p>At Phones Palace, our mission is to provide comprehensive information, reviews, and guides to help you make informed decisions about smartphones and mobile devices. Whether you're a tech enthusiast, a casual user, or someone in need of guidance, we're here to help you navigate the ever-evolving world of phones.</p>
+      <p> Our mission at Phones Palace, is to provide comprehensive information, reviews, and guides to help you make informed decisions about smartphones and mobile devices. Whether you're a tech enthusiast, a casual user, or someone in need of guidance, we're here to help you navigate the ever-evolving world of phones.</p>
       
       <h2>What We Offer</h2>
       <ul>
