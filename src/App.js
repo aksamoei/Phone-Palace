@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './components/About';
+import About from './pages/About';
 import CartItems from './pages/CartItems';
 import PhoneDetails from './components/PhoneDetails';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Orders from './pages/Orders';
-import './App.css'; // Import CSS file
+import './App.css'; 
 
 function App() {
   const [phones, setPhones] = useState([]);
