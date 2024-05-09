@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CartItem from '../components/CartItem'; // Import the CartItem component
+import CartItem from '../components/CartItem'; 
 import './Home.css';
 
 const generateRandomId = () => {
@@ -11,8 +11,24 @@ const generateRandomId = () => {
   return randomId;
 };
 
-function CartItems({ phones }) {
+function CartItems({ phones, setCartItems }) {
   const [totalPrice, setTotalPrice] = useState(0);
+
+
+  const removeFromCart = (itemId) => {
+    fetch(`http://localhost:3000/catitems/${itemId}`, {
+      method: 'DELETE'
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Failed to remove item from cart');
+      }
+      // Filter out the removed item from the cartItems state
+      setCartItems(prevCartItems => prevCartItems.filter(item => item.id !== itemId));
+    })
+    .catch(error => console.error('Error removing item from cart:', error));
+  }; 
+
 
   const handleBuyClick = async (phoneData) => {
     try {
@@ -56,13 +72,19 @@ function CartItems({ phones }) {
         throw new Error('Failed to add items to history');
       }
       alert(`Successfully added all items to history with Tracking ID: ${randomId}`);
+      setCartItems([]);
+      window.location.href = "/orders";
+      // I want delete all data at endpoint: http://localhost:3000/catitems
     } catch (error) {
       console.error(error);
       alert('Failed to add items to history');
     }
   };
 
-  // Function to calculate total price
+  
+
+
+  
   useEffect(() => {
     const totalPrice = phones.reduce((acc, phone) => acc + phone.price, 0);
     setTotalPrice(totalPrice);
@@ -70,10 +92,12 @@ function CartItems({ phones }) {
 
   return (
     <div className="cart-list-container">
-      <h2>Cart Items</h2>
+      <div className='header'>
+      <h1>Cart Items</h1>
+      </div>
       <ul>
         {phones.map(item => (
-          <CartItem key={item.id} item={item} onBuyClick={() => handleBuyClick(item)} />
+          <CartItem key={item.id} item={item} onBuyClick={() => handleBuyClick(item)} removeFromCart={removeFromCart}/>
         ))}
       </ul>
 

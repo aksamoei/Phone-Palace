@@ -27,7 +27,9 @@ function Orders() {
 
   return (
     <div className='orders-container '>
-       <h2>Orders</h2>
+       <div className='header'>
+      <h1>Orders</h1>
+      </div>
 <div className="orders">
      
       {orders.map(order => (

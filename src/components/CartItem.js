@@ -21,6 +21,7 @@ function CartItem({ item, onBuyClick, removeFromCart }) {
     const randomId = generateRandomId();
     const dataWithId = { ...item, trackingId: randomId };
     onBuyClick(dataWithId);
+    removeFromCart(item.id);
   };
 
   
