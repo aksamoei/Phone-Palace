@@ -301,6 +301,22 @@
         "OxygenOS",
         "5G capable"
       ]
+    },
+    {
+      "id": "3",
+      "phoneName": "OnePlus 9 Pro",
+      "brand": "OnePlus",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/06/OnePlus-12-5G.jpg",
+      "price": 969,
+      "description_short": "The OnePlus 9 Pro is a flagship killer with its Hasselblad camera system and fast charging capabilities.",
+      "description_long": "The OnePlus 9 Pro redefines flagship smartphones with its Hasselblad camera system, delivering stunning photography and video capabilities. Its Snapdragon 888 processor and Warp Charge 65T ensure blazing-fast performance and charging speeds, while OxygenOS provides a clean, customizable user experience.",
+      "features": [
+        "Hasselblad camera system",
+        "Snapdragon 888 processor",
+        "Warp Charge 65T",
+        "OxygenOS",
+        "5G capable"
+      ]
     }
   ],
   "history": [

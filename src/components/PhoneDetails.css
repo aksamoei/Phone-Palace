@@ -11,8 +11,8 @@
 
 .phone-details {
   display: flex;
-  /* flex-wrap: wrap;
-  justify-content: space-between; */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .phone-name{
   font-size: 40px;
@@ -29,14 +29,16 @@
 display: flex;
 flex-direction: column;
 justify-content: center; /* Vertically center content */
+
 }
 
 .phone-image-container {
   margin-left: 20px;
+  
 }
 
 .phone-image {
-  width: 600px;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
 }
