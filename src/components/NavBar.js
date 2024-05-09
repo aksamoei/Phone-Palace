@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import './NavBar.css'; // Import CSS file for additional styles
 import { NavLink } from 'react-router-dom';
-import { FaShoppingCart } from 'react-icons/fa';
+//import { FaShoppingCart } from 'react-icons/fa';
 
 function NavBar() {
 
@@ -26,7 +26,7 @@ function NavBar() {
                  */}
                  <NavLink to="/" className={`nav-link ${selectedItem === 'Home' ? 'selected' : ''}`} onClick={() => handleItemClick('Home')}>Home</NavLink>
                 <NavLink to="/cart" className={`nav-link ${selectedItem === 'Cart' ? 'selected' : ''}`} onClick={() => handleItemClick('Cart')}>
-                <FaShoppingCart />
+                Cart
                 </NavLink>
                 <NavLink to="/orders" className={`nav-link ${selectedItem === 'Orders' ? 'selected' : ''}`} onClick={() => handleItemClick('Orders')}>Orders</NavLink>
                 <NavLink to="/about" className={`nav-link ${selectedItem === 'About' ? 'selected' : ''}`} onClick={() => handleItemClick('About')}>About</NavLink>
