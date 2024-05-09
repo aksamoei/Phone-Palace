@@ -1,7 +1,12 @@
 .h1 {
   color: red; /* Style h1 to have red color */
 }
-
+.header{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+text-align: center;
+}
 .item-card {
   background-color: white;
   color: black;
@@ -58,7 +63,7 @@
 
 /*style p description*/ 
 .color-0 {
-  color: red;
+  color: #121481;
 }
 
 .color-1 {
@@ -77,7 +82,7 @@
   color: purple;
 }@keyframes colorChange {
   0% {
-    color: red; /* Initial color */
+    color: #FF5B00; /* Initial color */
   }
   100% {
     color: blue; /* Final color */
@@ -110,22 +115,127 @@
   margin-left: 10px;
 }
 
-.search-container,
-.filter-container {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center; /* Center content horizontally */
-  margin-bottom: 10px; /* Add space between search and filter */
+
+
+/*smart btn starts*/
+
+.btn-container{
+  display: flex;
+  justify-content: center;
 }
 
-.search-input,
-#brandSelect {
-  width: 80%; /* Adjust width to occupy most of the container */
-  max-width: 400px; /* Limit maximum width */
-  padding: 10px;
-  border: 3px solid #007bff;
-  border-radius: 5px;
-  font-size: 1rem;
-  margin-left: 40px; /* Add space between search and filter */
+.button {
+  --width: 300px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #222;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+  
 }
+
+.button::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: #555;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #555;
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button:hover {
+  background: #222;
+}
+
+.button:hover .text {
+  top: -100%;
+}
+
+.button:hover .icon {
+  top: 0;
+}
+
+.button:hover:before,.button:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.button:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+
+
+
 

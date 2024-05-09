@@ -1,7 +1,16 @@
 import React from 'react';
 import './CartItem.css';
 
-function CartItem({ item, removeFromCart}) {
+const generateRandomId = () => {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let randomId = '';
+  for (let i = 0; i < 10; i++) {
+    randomId += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return randomId;
+};
+
+function CartItem({ item, onBuyClick, removeFromCart }) {
   const handleRemoveFromCart = () => {
     // Call the removeFromCart function with the item ID
     removeFromCart(item.id);
@@ -9,8 +18,18 @@ function CartItem({ item, removeFromCart}) {
   };
 
   const handleBuy = () => {
+    const randomId = generateRandomId();
+    const dataWithId = { ...item, trackingId: randomId };
+    onBuyClick(dataWithId);
+    removeFromCart(item.id);
+  };
+
+  
+
+
+  {/*const handleBuy = () => {
     // Send a POST request to the history endpoint with the item data
-    fetch("http://localhost:3001/history", {
+    fetch('http://localhost:3000/history', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -28,7 +47,8 @@ function CartItem({ item, removeFromCart}) {
     .catch(error => console.error('Error adding item to history:', error));
 
     removeFromCart(item.id);
-  };
+  };*/}
+  
 
   return (
     <div className="cart-item">
