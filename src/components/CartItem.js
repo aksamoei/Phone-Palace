@@ -17,7 +17,7 @@ function CartItem({ item, onBuyClick, removeFromCart }) {
     
   };
 
-  const handleBuyClick = () => {
+  const handleBuy = () => {
     const randomId = generateRandomId();
     const dataWithId = { ...item, trackingId: randomId };
     onBuyClick(dataWithId);
@@ -60,7 +60,7 @@ function CartItem({ item, onBuyClick, removeFromCart }) {
         <p className="cart-item-price">Price: ${item.price}</p>
       </div>
       <div className="cart-item-buttons">
-        <button className="buy-button" onClick={handleBuyClick}>Buy</button>
+        <button className="buy-button" onClick={handleBuy}>Buy</button>
         <button className="remove-from-cart-button" onClick={handleRemoveFromCart}>Remove from Cart</button>
 
       </div>
