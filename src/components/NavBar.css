@@ -44,4 +44,27 @@
     font-weight: bold; /* Apply bold font to indicate selection */
     text-decoration: underline;
   }
+
+  .wrapper{
+    position: relative;
+    }
+    
+    .wrapper span{
+    position: absolute;
+    top: -2px;
+    right: -2px; 
+    }
+
+    .cart-icon{
+      height: 70px;
+      width: 70px;
+    }
+
+    .cart-text{
+      background-color: orange;
+      border-radius: 50%;
+      padding: 10px;
+      opacity: 100;
+      font-weight: bold;
+    }
   
