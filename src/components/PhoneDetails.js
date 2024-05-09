@@ -11,7 +11,7 @@ function PhoneDetails() {
   useEffect(() => {
     const fetchPhoneDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:3001/phoneitems/${id}`);
+        const response = await fetch(`http://localhost:3000/phoneitems/${id}`);
         const data = await response.json();
         setPhone(data);
       } catch (error) {
@@ -24,7 +24,7 @@ function PhoneDetails() {
 
   const addToCart = async () => {
     try {
-      const response = await fetch("http://localhost:3001/catitems", {
+      const response = await fetch('http://localhost:3000/catitems', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -2,6 +2,7 @@
 
 .phone-details-container {
   max-width: 70%;
+  height: 100%;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -11,8 +12,6 @@
 
 .phone-details {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .phone-name{
   font-size: 40px;
@@ -29,16 +28,14 @@
 display: flex;
 flex-direction: column;
 justify-content: center; /* Vertically center content */
-
 }
 
 .phone-image-container {
   margin-left: 20px;
-  
 }
 
 .phone-image {
-  max-width: 400px;
+  width: 600px;
   height: auto;
   border-radius: 10px;
 }
@@ -106,4 +103,3 @@ justify-content: center; /* Vertically center content */
   color: #fff;
   width: 400px;
 }
-
