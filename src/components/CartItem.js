@@ -29,6 +29,7 @@ function CartItem({ item, removeFromCart}) {
 
     removeFromCart(item.id);
   };
+  
 
   return (
     <div className="cart-item">

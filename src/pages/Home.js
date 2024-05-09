@@ -8,6 +8,7 @@ function Home({ phones}) {
     const [searchQuery, setSearchQuery] = useState('');
     
 
+   
     const filteredPhones = phones.filter(phone =>
       phone.phoneName.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -33,8 +34,8 @@ function Home({ phones}) {
   
   return (
     <div>
-        
-      
+
+      <div className='header'>
       <p className="description">
         PhonePalace is your one-stop destination for buying the latest smartphones online. Whether you're an Android
         enthusiast, an iPhone aficionado, or a tech-savvy individual, we have the perfect device for you. Browse our
@@ -42,6 +43,8 @@ function Home({ phones}) {
         of shopping for your next phone from the comfort of your home.
       </p>
       <h1>Start Shopping at PhonesPalace</h1>
+      </div>
+      
       <div className="search-container">
         <input
           type="text"
