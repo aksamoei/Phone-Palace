@@ -60,7 +60,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home phones={phones} setPhones={setPhones} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<CartItems cartItems={cartItems} setCartItems={setCartItems} />} />
+          <Route path="/cart" element={<CartItems phones={cartItems} setCartItems={setCartItems} />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/phones/:id" element={<PhoneDetails />} />
         </Routes>

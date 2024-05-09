@@ -2,50 +2,84 @@ import React, { useState, useEffect } from 'react';
 import CartItem from '../components/CartItem'; // Import the CartItem component
 import './Home.css';
 
-function CartItems({cartItems,setCartItems}) {
+const generateRandomId = () => {
+  const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let randomId = '';
+  for (let i = 0; i < 10; i++) {
+    randomId += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return randomId;
+};
 
+function CartItems({ phones }) {
   const [totalPrice, setTotalPrice] = useState(0);
-  
 
-  // Function to remove an item from the cart
-const removeFromCart = (itemId) => {
-  fetch(`http://localhost:3000/catitems/${itemId}`, {
-    method: 'DELETE'
-  })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Failed to remove item from cart');
+  const handleBuyClick = async (phoneData) => {
+    try {
+      const randomId = generateRandomId();
+      const submission = {
+        id: randomId,
+        phoneItems: [phoneData]
+      };
+      const response = await fetch('http://localhost:3000/history', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submission),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to add item to history');
+      }
+      alert(`Successfully added ${phoneData.phoneName} to history with Tracking ID: ${randomId}`);
+    } catch (error) {
+      console.error(error);
+      alert('Failed to add item to history');
     }
-    // Filter out the removed item from the cartItems state
-    setCartItems(prevCartItems => prevCartItems.filter(item => item.id !== itemId));
-  })
-  .catch(error => console.error('Error removing item from cart:', error));
-};  
+  };
 
-function calculateTotalPrice(data) {
-  const totalPrice = data.reduce(function (acc, phone) {
-    return acc + phone.price;
-  }, 0);
-  setTotalPrice(totalPrice);
-  console.log("calculating");
-}
+  const handleBuyAllClick = async () => {
+    try {
+      const randomId = generateRandomId();
+      const submission = {
+        id: randomId,
+        phoneItems: phones
+      };
+      const response = await fetch('http://localhost:3000/history', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submission),
+      });
+      if (!response.ok) {
+        throw new Error('Failed to add items to history');
+      }
+      alert(`Successfully added all items to history with Tracking ID: ${randomId}`);
+    } catch (error) {
+      console.error(error);
+      alert('Failed to add items to history');
+    }
+  };
 
-useEffect(() => {
-  calculateTotalPrice(cartItems);
-  console.log("Log me total!");
-}, [cartItems]);
-
+  // Function to calculate total price
+  useEffect(() => {
+    const totalPrice = phones.reduce((acc, phone) => acc + phone.price, 0);
+    setTotalPrice(totalPrice);
+  }, [phones]);
 
   return (
     <div className="cart-list-container">
       <h2>Cart Items</h2>
       <ul>
-        {cartItems.map(item => (
-          <CartItem key={item.id} item={item} removeFromCart={removeFromCart}/>
+        {phones.map(item => (
+          <CartItem key={item.id} item={item} onBuyClick={() => handleBuyClick(item)} />
         ))}
       </ul>
 
-      <div className="btn-container">
+      
+
+      <div className="btn-container" onClick={handleBuyAllClick}>
       <div  data-tooltip="Buy all items" className="button">
         <div className="button-wrapper">
           <div className="text">Buy All @ $ {totalPrice}</div>
@@ -62,93 +96,3 @@ useEffect(() => {
 }
 
 export default CartItems;
-
-{/*
-import React, { useState, useEffect } from 'react';
-import CartItem from '../components/CartItem'; // Import the CartItem component
-import './Home.css';
-
-function CartItems({settotalCartItems}) {
-  const [cartItems, setCartItems] = useState([]);
-
-  const [totalPrice, setTotalPrice] = useState(0);
-
-
-
-  useEffect(() => {
-    // Fetch cart items from the endpoint
-    fetch('http://localhost:3000/catitems')
-      .then(response => response.json())
-      .then(data => {
-        setCartItems(data);
-        calculateTotalPrice(data);
-        console.log("Fetching");
-      
-      })
-      .catch(error => console.error('Error fetching cart items:', error));
-  }, []);
-
-  settotalCartItems(cartItems.length)
-
-
-
-  // Function to remove an item from the cart
-  const removeFromCart = (itemId) => {
-    fetch(`http://localhost:3000/catitems/${itemId}`, {
-      method: 'DELETE'
-    })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Failed to remove item from cart');
-        }
-        // Filter out the removed item from the cartItems state
-        setCartItems(prevCartItems => prevCartItems.filter(item => item.id !== itemId));
-        console.log("removing");
-      })
-      .catch(error => console.error('Error removing item from cart:', error));
-  };
-
-  function calculateTotalPrice(data) {
-    const totalPrice = data.reduce(function (acc, phone) {
-      return acc + phone.price;
-    }, 0);
-    setTotalPrice(totalPrice);
-    console.log("calculating");
-  }
-
-
-
-  return (
-    <div className="cart-list-container">
-      <h2>Cart Items</h2>
-
-      <ul>
-        {cartItems.map(item => (
-          <CartItem key={item.id} item={item} removeFromCart={removeFromCart} totalPrice={totalPrice} setTotalPrice={setTotalPrice} />
-
-        ))}
-      </ul>
-
-
-
-
-      <div className="btn-container">
-      <div  data-tooltip="Buy all items" className="button">
-        <div className="button-wrapper">
-          <div className="text">Buy All @ ${totalPrice}</div>
-          <span className="icon">
-            <svg viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path>
-            </svg>
-          </span>
-        </div>
-      </div>
-      </div>
-
-
-    </div>
-  );
-}
-
-export default CartItems;
-*/}
