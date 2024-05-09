@@ -63,7 +63,7 @@
 
   /*style p description*/ 
   .color-0 {
-    color: red;
+    color: #121481;
   }
   
   .color-1 {
@@ -82,7 +82,7 @@
     color: purple;
   }@keyframes colorChange {
     0% {
-      color: red; /* Initial color */
+      color: #FF5B00; /* Initial color */
     }
     100% {
       color: blue; /* Final color */
