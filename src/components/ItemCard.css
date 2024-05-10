@@ -1,0 +1,6 @@
+.item-card {
+    display: flex;
+    flex-direction: column; /* Display contents in a column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+}

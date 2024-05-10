@@ -1,0 +1,242 @@
+.h1 {
+    color: red; /* Style h1 to have red color */
+  }
+  .header{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+  text-align: center;
+  }
+.item-card {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(25% - 20px); /* 25% width with margin */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .item-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+  }
+  
+  .item-image {
+    width: 50%;
+    height: 200px; /* Adjust this value as needed */
+    /* Remove object-fit: cover; */
+    transition: transform 0.3s ease;
+  }
+  
+  .item-name {
+    margin: 10px 0;
+  }
+
+  .item-image:hover {
+    transform: scale(1.1); /* Increase image size on hover */
+  }
+  
+  
+  .item-price {
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .add-to-cart:hover {
+    background-color: red;
+  }
+
+  /*style p description*/ 
+  .color-0 {
+    color: #121481;
+  }
+  
+  .color-1 {
+    color: blue;
+  }
+  
+  .color-2 {
+    color: green;
+  }
+  
+  .color-3 {
+    color: orange;
+  }
+  
+  .color-4 {
+    color: purple;
+  }@keyframes colorChange {
+    0% {
+      color: #FF5B00; /* Initial color */
+    }
+    100% {
+      color: blue; /* Final color */
+    }
+  }
+  .description{
+    font-size: 30px;
+  }
+  .description span {
+    animation: colorChange 5s linear infinite; /* Adjust duration and timing function as needed */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .search-input {
+    width: 80%; /* Adjust width to occupy most of the container */
+    max-width: 400px; /* Limit maximum width */
+    padding: 10px;
+    border: 3px solid #007bff;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .search-icon {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+
+
+  /*smart btn starts*/
+
+  .btn-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    --width: 300px;
+    --height: 35px;
+    --tooltip-height: 35px;
+    --tooltip-width: 90px;
+    --gap-between-tooltip-to-button: 18px;
+    --button-color: #222;
+    --tooltip-color: #fff;
+    width: var(--width);
+    height: var(--height);
+    background: var(--button-color);
+    position: relative;
+    text-align: center;
+    border-radius: 0.45em;
+    font-family: "Arial";
+    transition: background 0.3s;
+    
+  }
+  
+  .button::before {
+    position: absolute;
+    content: attr(data-tooltip);
+    width: var(--tooltip-width);
+    height: var(--tooltip-height);
+    background-color: #555;
+    font-size: 0.9rem;
+    color: #fff;
+    border-radius: .25em;
+    line-height: var(--tooltip-height);
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+    left: calc(50% - var(--tooltip-width) / 2);
+  }
+  
+  .button::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #555;
+    left: calc(50% - 10px);
+    bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+  }
+  
+  .button::after,.button::before {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button-wrapper,.text,.icon {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    color: #fff;
+  }
+  
+  .text {
+    top: 0
+  }
+  
+  .text,.icon {
+    transition: top 0.5s;
+  }
+  
+  .icon {
+    color: #fff;
+    top: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .button:hover {
+    background: #222;
+  }
+  
+  .button:hover .text {
+    top: -100%;
+  }
+  
+  .button:hover .icon {
+    top: 0;
+  }
+  
+  .button:hover:before,.button:hover:after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .button:hover:after {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+  }
+  
+  .button:hover:before {
+    bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+  }
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,59 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 50%; /* Set width to 50% of the viewport */
+  margin: 0 auto; /* Center horizontally */
+}
+
+  
+  .cart-item-image {
+    flex: 0 0 100px; /* Set width of image container */
+    margin-right: 20px; /* Add some spacing between image and details */
+  }
+  
+  .cart-item-image img {
+    width: 100%; /* Ensure images fill their container */
+  }
+  
+  .cart-item-details {
+    flex: 1; /* Allow details to take remaining space */
+  }
+  
+  .cart-item-buttons {
+    display: flex;
+    flex-direction: column; /* Arrange buttons vertically */
+  }
+  
+  .remove-from-cart-button,
+.buy-button {
+  padding: 10px 20px; /* Increase padding for better spacing */
+  margin-bottom: 10px; /* Add space between buttons */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: transparent; /* Set initial background color to transparent */
+  color: white; /* Set text color to white */
+  font-size: 16px; /* Adjust font size */
+}
+
+.remove-from-cart-button {
+  background-color: red;
+}
+
+.buy-button {
+  background-color: blue;
+}
+
+.remove-from-cart-button:hover {
+  background-color: darkred;
+}
+
+.buy-button:hover {
+  background-color: darkblue;
+}
