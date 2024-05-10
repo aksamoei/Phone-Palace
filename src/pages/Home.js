@@ -45,9 +45,7 @@ function Home({ phones}) {
       <div className='header'>
       <p className="description">
         PhonePalace is your one-stop destination for buying the latest smartphones online. Whether you're an Android
-        enthusiast, an iPhone aficionado, or a tech-savvy individual, we have the perfect device for you. Browse our
-        extensive collection of smartphones, explore the latest models from top brands, and experience the convenience
-        of shopping for your next phone from the comfort of your home.
+        enthusiast, an iPhone aficionado, or a tech-savvy individual, we have the perfect device for you. 
       </p>
       <h1>Start Shopping at PhonesPalace</h1>
       </div>
