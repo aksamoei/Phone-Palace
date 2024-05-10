@@ -23,6 +23,20 @@ This project is an E-Commerce website that deals with phones.Clients are able to
 * javascript
 * CSS
 * HTML
+* json
+## how to use this project
+1. Clone this repo
+2. Run `npm install`
+3. Run `json-server --watch db.json`
+4. Run `npm start`
+
+ ## Collaborators
+
+ - [Beatrice Gachigi](https://github.com/Betty20000)
+ - [Abraham Samoei](https://github.com/aksamoei)
+ - [Albert Cheruiyot](https://github.com/albertcheruiyot)
+ - [Brian Koech](https://github.com/Cheruu004)
+ - [Abdihakim Kullow](https://github.com/kullow-thoughts)
 
 
 
