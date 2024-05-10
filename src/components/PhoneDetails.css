@@ -1,5 +1,5 @@
 /* PhoneDetails.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Irish+Grover&family=Lobster+Two:ital,wght@1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 .phone-details-container {
   max-width: 70%;
   height: 100%;
@@ -12,13 +12,18 @@
 
 .phone-details {
   display: flex;
-}
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+ }
+ 
 .phone-name{
   font-size: 40px;
   font-weight: bold;
 }
 .phone-short-description{
-  font-size: 30px;
+  font-size: 1.2em;
   justify-content: left;
 }
 
@@ -31,12 +36,15 @@ justify-content: center; /* Vertically center content */
 }
 
 .phone-image-container {
-  margin-left: 20px;
+  display:flex;
+  width: 100%;
+  justify-content: center;
+ 
+ 
 }
 
-.phone-image {
-  width: 600px;
-  height: auto;
+.phone-images {
+  width: 350px;
   border-radius: 10px;
 }
 
@@ -90,7 +98,7 @@ justify-content: center; /* Vertically center content */
 }
 
 .phone-buttons button:hover {
-  background-color: red; /* Change background color on hover */
+  background-color: rgb(255, 7, 7); /* Change background color on hover */
 }
 
 .back-button {

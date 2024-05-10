@@ -53,10 +53,12 @@ function PhoneDetails() {
       <p className="phone-short-description">{phone.description_short}</p>
       <div className="phone-details">
         <div className="phone-image-container">
-          <img src={phone.image} alt={phone.phoneName} className="phone-image" />
+          
+          <img src={phone.image} alt={phone.phoneName} className="phone-images" />
+          <p className="phone-description">{phone.description_long}</p>
         </div>
         <div className="phone-info">
-          <p className="phone-description">{phone.description_long}</p>
+         
           <p className="phone-price">Price: ${phone.price}</p>
           <div className="phone-buttons">
             <button className="back-button" onClick={() => window.history.back()}>Go Back</button>

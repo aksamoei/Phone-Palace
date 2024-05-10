@@ -2,11 +2,14 @@
     color: red; /* Style h1 to have red color */
   }
   .header{
+    
     display: flex;
       flex-direction: column;
       align-items: center;
   text-align: center;
+  justify-content: center;
   }
+  
 .item-card {
     background-color: white;
     color: black;
@@ -82,17 +85,19 @@
     color: purple;
   }@keyframes colorChange {
     0% {
-      color: #FF5B00; /* Initial color */
+      color: #c705f8; /* Initial color */
     }
     100% {
-      color: blue; /* Final color */
+      color: rgb(3, 23, 243); /* Final color */
     }
   }
   .description{
-    font-size: 30px;
+    font-size: 20px;
+    
+    width: 70%;
   }
   .description span {
-    animation: colorChange 5s linear infinite; /* Adjust duration and timing function as needed */
+    animation: colorChange 3s linear infinite; /* Adjust duration and timing function as needed */
   }
 
   .search-container {

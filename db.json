@@ -222,70 +222,7 @@
       ]
     }
   ],
-  "catitems": [
-    {
-      "id": "2",
-      "phoneName": "Galaxy S21 Ultra",
-      "brand": "Samsung",
-      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
-      "price": 1199,
-      "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
-      "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
-      "features": [
-        "108MP camera",
-        "100x Space Zoom",
-        "120Hz Dynamic AMOLED 2X display",
-        "Exynos 2100/Snapdragon 888 processor",
-        "S Pen compatibility"
-      ]
-    },
-    {
-      "id": "6",
-      "phoneName": "Sony Xperia 1 III",
-      "brand": "Sony",
-      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/11/Sony-Xperia-10-V-Blue.jpg",
-      "price": 1099,
-      "description_short": "The Sony Xperia 1 III offers professional-grade photography and cinematic display quality.",
-      "description_long": "The Sony Xperia 1 III features a 4K OLED display with HDR support, perfect for cinematic viewing experiences. Its triple camera system with ZEISS optics delivers exceptional image quality, making it a favorite among photography enthusiasts.",
-      "features": [
-        "4K OLED display with HDR",
-        "Triple camera system with ZEISS optics",
-        "Snapdragon 888 processor",
-        "Professional photography features"
-      ]
-    },
-    {
-      "id": "7",
-      "phoneName": "Huawei P50 Pro",
-      "brand": "Huawei",
-      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2023/07/Huawei-Mate-50-Pro.jpg",
-      "price": 899,
-      "description_short": "The Huawei P50 Pro excels in photography and offers a premium design with innovative features.",
-      "description_long": "The Huawei P50 Pro features an impressive quad-camera setup developed in collaboration with Leica, delivering stunning photography results. Its elegant design, powered by HarmonyOS, offers a unique user experience.",
-      "features": [
-        "Quad-camera setup with Leica optics",
-        "HarmonyOS",
-        "Premium design",
-        "5G capable"
-      ]
-    },
-    {
-      "id": "10",
-      "phoneName": "Oppo Find X5 Pro",
-      "brand": "Oppo",
-      "image": "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x5-pro.jpg",
-      "price": 1099,
-      "description_short": "The Oppo Find X5 Pro offers cutting-edge technology and elegant design, perfect for discerning users.",
-      "description_long": "The Oppo Find X5 Pro features a Hasselblad-developed camera system and a QHD+ AMOLED display, delivering exceptional photography and viewing experiences. Its sleek design and ColorOS 12 provide a premium user experience.",
-      "features": [
-        "Hasselblad-developed camera system",
-        "QHD+ AMOLED display",
-        "ColorOS 12",
-        "Fast charging",
-        "5G capable"
-      ]
-    }
-  ],
+  "catitems": [],
   "history": [
     {
       "id": "2xz8JDQFtR",
@@ -472,6 +409,48 @@
             "QHD+ AMOLED display",
             "ColorOS 12",
             "Fast charging",
+            "5G capable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1wkKf75VYF",
+      "phoneItems": [
+        {
+          "id": "2",
+          "phoneName": "Galaxy S21 Ultra",
+          "brand": "Samsung",
+          "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
+          "price": 1199,
+          "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
+          "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
+          "features": [
+            "108MP camera",
+            "100x Space Zoom",
+            "120Hz Dynamic AMOLED 2X display",
+            "Exynos 2100/Snapdragon 888 processor",
+            "S Pen compatibility"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rUPS3wknyp",
+      "phoneItems": [
+        {
+          "id": "1",
+          "phoneName": "iPhone 13 Pro",
+          "brand": "Apple",
+          "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/07/Apple-iPhone-13-Pro.jpg",
+          "price": 999,
+          "description_short": "The iPhone 13 Pro is Apple's latest flagship offering, boasting an advanced camera system and powerful performance.",
+          "description_long": "The iPhone 13 Pro is the pinnacle of Apple's smartphone lineup, featuring a stunning Super Retina XDR display, Pro camera system with advanced computational photography, and the lightning-fast A15 Bionic chip. Its premium design, combined with the latest iOS features, ensures an unparalleled user experience.",
+          "features": [
+            "Super Retina XDR display",
+            "Pro camera system",
+            "A15 Bionic chip",
+            "iOS 15",
             "5G capable"
           ]
         }

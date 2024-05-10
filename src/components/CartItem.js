@@ -47,7 +47,7 @@ function CartItem({ item, onBuyClick, removeFromCart }) {
     .catch(error => console.error('Error adding item to history:', error));
 
     removeFromCart(item.id);
-  };*/}
+  */}
   
 
   return (
