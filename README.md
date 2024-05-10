@@ -33,6 +33,7 @@ This project is an E-Commerce website that deals with phones.Clients are able to
  ## Collaborators
 
  - [Beatrice Gachigi](https://github.com/Betty20000)
+ - [Abdulhakim Kullow](https://github.com/kullow-thoughts)
  - [Abraham Samoei](https://github.com/aksamoei)
  - [Albert Cheruiyot](https://github.com/albertcheruiyot)
  - [Brian Koech](https://github.com/Cheruu004)
