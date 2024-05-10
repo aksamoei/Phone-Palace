@@ -224,22 +224,6 @@
   ],
   "catitems": [
     {
-      "id": "2",
-      "phoneName": "Galaxy S21 Ultra",
-      "brand": "Samsung",
-      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
-      "price": 1199,
-      "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
-      "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
-      "features": [
-        "108MP camera",
-        "100x Space Zoom",
-        "120Hz Dynamic AMOLED 2X display",
-        "Exynos 2100/Snapdragon 888 processor",
-        "S Pen compatibility"
-      ]
-    },
-    {
       "id": "6",
       "phoneName": "Sony Xperia 1 III",
       "brand": "Sony",
@@ -473,6 +457,27 @@
             "ColorOS 12",
             "Fast charging",
             "5G capable"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1wkKf75VYF",
+      "phoneItems": [
+        {
+          "id": "2",
+          "phoneName": "Galaxy S21 Ultra",
+          "brand": "Samsung",
+          "image": "https://www.phoneplacekenya.com/wp-content/uploads/2022/01/Samsung-Galaxy-S22-Ultra-5G.jpg",
+          "price": 1199,
+          "description_short": "The Galaxy S21 Ultra is Samsung's ultimate smartphone experience, featuring an incredible camera setup and super smooth display.",
+          "description_long": "The Galaxy S21 Ultra sets a new benchmark for premium smartphones, with its 108MP camera, 100x Space Zoom, and 120Hz Dynamic AMOLED 2X display. Its powerful Exynos 2100 or Snapdragon 888 processor ensures smooth performance, while its sleek design and versatile S Pen compatibility cater to every need.",
+          "features": [
+            "108MP camera",
+            "100x Space Zoom",
+            "120Hz Dynamic AMOLED 2X display",
+            "Exynos 2100/Snapdragon 888 processor",
+            "S Pen compatibility"
           ]
         }
       ]
