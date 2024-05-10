@@ -7,7 +7,7 @@ import PhoneDetails from './components/PhoneDetails';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 import Orders from './pages/Orders';
-import './App.css'; // Import CSS file
+import './App.css'; 
 
 function App() {
   const [phones, setPhones] = useState([]);
