@@ -47,7 +47,7 @@ function CartItems({ phones, setCartItems }) {
       if (!response.ok) {
         throw new Error('Failed to add item to history');
       }
-      alert(`Successfully added ${phoneData.phoneName} to history with Tracking ID: ${randomId}`);
+      alert(`Successfully made an order of  ${phoneData.phoneName} with Tracking ID: ${randomId}`);
     } catch (error) {
       console.error(error);
       alert('Failed to add item to history');
@@ -71,7 +71,7 @@ function CartItems({ phones, setCartItems }) {
       if (!response.ok) {
         throw new Error('Failed to add items to history');
       }
-      alert(`Successfully added all items to history with Tracking ID: ${randomId}`);
+      alert(`Successfully made an order with Tracking ID: ${randomId}`);
       setCartItems([]);
       window.location.href = "/orders";
       // I want delete all data at endpoint: http://localhost:3000/catitems
