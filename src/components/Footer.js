@@ -21,7 +21,7 @@ function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <p>&copy; 2024 Phone Palace. All rights reserved.</p>
       </div>
     </footer>
   );
