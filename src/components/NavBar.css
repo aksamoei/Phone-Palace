@@ -12,6 +12,10 @@
     display: flex;
     align-items: center;
   }
+
+  .brand:hover{
+    cursor: pointer;
+  }
   
   .logo {
     width: 60px;
