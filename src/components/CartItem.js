@@ -27,29 +27,7 @@ function CartItem({ item, onBuyClick, removeFromCart }) {
   
 
 
-  {/*const handleBuy = () => {
-    // Send a POST request to the history endpoint with the item data
-    fetch('http://localhost:3000/history', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(item)
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Failed to add item to history');
-      }
-      // Handle success (if needed)
-      alert('Phone bought successfully!');
-      console.log('Item added to history:', item);
-    })
-    .catch(error => console.error('Error adding item to history:', error));
-
-    removeFromCart(item.id);
-  };*/}
   
-
   return (
     <div className="cart-item">
       <div className="cart-item-image">
