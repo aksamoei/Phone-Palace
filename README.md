@@ -24,7 +24,7 @@ This project is an E-Commerce website that deals with phones.Clients are able to
 * CSS
 * HTML
 * json
-## how to use this project
+## How to Use This Project
 1. Clone this repo
 2. Run `npm install`
 3. Run `json-server --watch db.json`
