@@ -37,7 +37,7 @@ This project is an E-Commerce website that deals with phones.Clients are able to
  - [Abraham Samoei](https://github.com/aksamoei)
  - [Albert Cheruiyot](https://github.com/albertcheruiyot)
  - [Brian Koech](https://github.com/Cheruu004)
- - [Abdihakim Kullow](https://github.com/kullow-thoughts)
+
 
 
 
